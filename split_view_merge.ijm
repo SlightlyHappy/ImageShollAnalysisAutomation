@@ -1,0 +1,10 @@
+run("Split Channels");
+selectWindow("C1-spacemice_77-SVZ_iba1Ed1-morphology.lif - Series003");
+selectWindow("C2-spacemice_77-SVZ_iba1Ed1-morphology.lif - Series003");
+run("Merge Channels...", "c1=[C1-spacemice_77-SVZ_iba1Ed1-morphology.lif - Series003] c2=[C2-spacemice_77-SVZ_iba1Ed1-morphology.lif - Series003] create");
+run("Z Project...", "projection=[Max Intensity]");
+run("Flatten");
+selectWindow("MAX_spacemice_77-SVZ_iba1Ed1-morphology.lif - Series003");
+close();
+selectWindow("MAX_spacemice_77-SVZ_iba1Ed1-morphology.lif - Series003-2");
+close();
